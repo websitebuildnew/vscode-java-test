@@ -19,7 +19,6 @@ trigger: none
 extends:
   template: azure-pipelines/MicroBuild.1ES.Official.yml@CustomPipelineTemplates
   parameters:
-    oneESTemplateTag: ${{ parameters.oneESTemplateTag }}
     pool: # This example is for Windows, but Mac/Linux are also supported.
       name: VSEngSS-MicroBuild2022-1ES
       demands:
